@@ -29,6 +29,17 @@ export default class App {
         }
         return suma;
     }
+
+    contarImparesWhile(inicio, fin){
+        let cont = 0, i = inicio;
+        while(i <= fin){
+            if(i % 2 != 0){
+                cont++;
+            }
+            i++;
+        }
+        return cont;
+    }
 }
 
 let app = new App();
@@ -41,3 +52,6 @@ console.log(app.contarImparesFor(2,15));
 
 //Demostracion de la funcion sumarParesWhile.
 console.log(app.sumarParesWhile());
+
+//Demostracion de la funcion sumarParesFor.
+console.log(app.contarImparesWhile(2,15));
