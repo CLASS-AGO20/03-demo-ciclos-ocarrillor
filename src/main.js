@@ -40,6 +40,17 @@ export default class App {
         }
         return cont;
     }
+
+    sumarParesDo(){
+        let cont = 1, suma = 0;
+        do{
+            if(cont % 2 == 0){
+                suma = suma + cont;
+            }
+            cont++;
+        }while(cont <= 20);
+        return suma;
+    }
 }
 
 let app = new App();
@@ -47,11 +58,14 @@ let app = new App();
 //Demostracion de la funcion sumarParesFor.
 console.log(app.sumarParesFor());
 
-//Demostracion de la funcion sumarParesFor.
+//Demostracion de la funcion contarImparesFor.
 console.log(app.contarImparesFor(2,15));
 
 //Demostracion de la funcion sumarParesWhile.
 console.log(app.sumarParesWhile());
 
-//Demostracion de la funcion sumarParesFor.
+//Demostracion de la funcion contarImparesWhile.
 console.log(app.contarImparesWhile(2,15));
+
+//Demostracion de la funcion sumarParesDo.
+console.log(app.sumarParesDo());
